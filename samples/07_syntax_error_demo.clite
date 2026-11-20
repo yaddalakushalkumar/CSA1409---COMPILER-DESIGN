@@ -1,0 +1,12 @@
+// Sample 7: Syntax Error Detection & Panic-Mode Recovery
+// The compiler detects missing semicolons, unexpected tokens, and recovers!
+
+int a = 100
+int b = 200;
+
+if (a > 50 {
+    println("Missing closing parenthesis");
+}
+
+int c = 300;
+println("Compilation error detection demonstration");

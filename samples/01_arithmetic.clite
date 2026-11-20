@@ -1,0 +1,15 @@
+// Sample 1: Arithmetic & Operator Precedence
+int a = 15;
+int b = 4;
+int c = 2;
+
+// Evaluates with proper precedence: (15 + (4 * 2)) - (15 / 2)
+int result = a + b * c - a / c;
+println("Calculated result:");
+println(result);
+
+float pi = 3.14159;
+float radius = 5.0;
+float area = pi * radius * radius;
+println("Circle area with radius 5.0:");
+println(area);

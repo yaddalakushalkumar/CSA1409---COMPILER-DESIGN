@@ -1,0 +1,12 @@
+// Sample 6: Compiler Optimization Demonstration
+// Notice how compile-time constants are folded and propagated!
+
+int folded1 = 10 + 20 * 3;     // Evaluated at compile time to 70
+int folded2 = 100 / 4 - 5;      // Evaluated at compile time to 20
+bool comp = 15 > 8;             // Evaluated to true
+
+int runtime_val = 5;
+int total = runtime_val + folded1;
+
+println("Optimization Result:");
+println(total);

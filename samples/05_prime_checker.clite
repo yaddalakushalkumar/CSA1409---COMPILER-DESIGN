@@ -1,0 +1,24 @@
+// Sample 5: Prime Number Checker with Nested Loops
+int num = 29;
+bool isPrime = true;
+
+if (num <= 1) {
+    isPrime = false;
+} else {
+    int d = 2;
+    while (d * d <= num) {
+        if (num % d == 0) {
+            isPrime = false;
+        }
+        d = d + 1;
+    }
+}
+
+print("Is ");
+print(num);
+print(" a prime number? ");
+if (isPrime) {
+    println("YES, it is Prime!");
+} else {
+    println("NO, it is Composite.");
+}

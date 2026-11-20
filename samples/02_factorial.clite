@@ -1,0 +1,14 @@
+// Sample 2: Factorial Calculation using While Loop
+int n = 6;
+int factorial = 1;
+int current = 1;
+
+while (current <= n) {
+    factorial = factorial * current;
+    current = current + 1;
+}
+
+print("Factorial of ");
+print(n);
+print(" is: ");
+println(factorial);

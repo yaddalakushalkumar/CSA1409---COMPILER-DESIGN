@@ -1,0 +1,24 @@
+// Sample 4: Function Declaration and Modular Calls
+int square(int val) {
+    return val * val;
+}
+
+int max(int x, int y) {
+    if (x > y) {
+        return x;
+    } else {
+        return y;
+    }
+}
+
+int a = 7;
+int b = 12;
+
+int sq_a = square(a);
+int larger = max(a, b);
+
+print("Square of 7: ");
+println(sq_a);
+
+print("Max of 7 and 12: ");
+println(larger);

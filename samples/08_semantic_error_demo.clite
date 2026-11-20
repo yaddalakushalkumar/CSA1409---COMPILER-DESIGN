@@ -1,0 +1,13 @@
+// Sample 8: Semantic Error Detection & Fuzzy Suggestion
+// The compiler detects redeclarations, undeclared variables,
+// and suggests closest matches ("Did you mean...?")
+
+int studentScore = 95;
+int studentScore = 100;     // Error: Redeclaration in same scope
+
+studentScor = 88;          // Error: Undeclared identifier -> Suggests 'studentScore'
+
+int flag = true;           // Error: Type mismatch assigning bool to int
+
+string msg = "Hello";
+int badMath = msg * 5;     // Error: Cannot multiply string

@@ -1,0 +1,15 @@
+// Sample 3: Fibonacci Sequence Generator
+int count = 10;
+int t1 = 0;
+int t2 = 1;
+
+println("Fibonacci Series (First 10 terms):");
+
+for (int i = 1; i <= count; i = i + 1) {
+    print(t1);
+    print(" ");
+    int nextTerm = t1 + t2;
+    t1 = t2;
+    t2 = nextTerm;
+}
+println("");
